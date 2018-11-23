@@ -2,5 +2,6 @@
   "version": 2,
   "builds": [
     { "src": "*.html", "use": "@now/static" }
-  ]
+  ],
+  "routes": [{ "src": "/projects", "dest": "/projects.html" }]
 }
