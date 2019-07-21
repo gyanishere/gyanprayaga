@@ -1,7 +1,18 @@
 {
+  "name": "gyan",
   "version": 2,
   "builds": [
-    { "src": "*.html", "use": "@now/static" }
+    { "src": "*.html", "use": "@now/static" },
+    { "src": "*.css", "use": "@now/static" },
+    { "src": "*.png", "use": "@now/static" },
+    { "src": "*.js", "use": "@now/static" },
+    { "src": "img/*.png", "use": "@now/static" },
+    { "src": "img/bg/*.jpg", "use": "@now/static" },
+    { "src": "img/work/*.png", "use": "@now/static" }
   ],
-  "routes": [{ "src": "/projects", "dest": "/projects.html" }]
+  "routes": [
+    { "src": "/projects", "dest": "/projects.html" },
+    { "src": "/contact", "dest": "/contact.html" },
+    { "src": "/home", "dest": "/index.html" }
+  ]
 }

@@ -2,33 +2,142 @@
 <html>
 <head>
   <title>Projects by Gyan</title>
+  <link rel='shortcut icon' href='favicon.png'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel='stylesheet' href='style.css'>
 </head>
 <body>
-  <main>
-    <nav><a href='/'>< home</a></nav>
+  <header class="top projects">
+    <div class="abs-container">
+      <div class="logo">
+          <a href="/"><span class="icon-logo" aria-hidden="true"><img src='favicon.png'></span> <span>GYAN</span> <!--<span class="logotext">Jujube<span> --><!-- <span class="text">Jujube</span>--></a>
+      </div>
 
-    <header>Projects</header>
+      <nav>
+          <div id="navigation"><a href="/">Home</a><a href="/projects" id="work">Projects</a><a href="/contact" id="contact">Contact</a></div>
+      </nav>
+     </div>
 
-    <div class='projects'>
-      <div class='project'>
-        <h3>MLab</h3>
-        <p>I made this for the MakerLab (MLab) at Grinnell. A platform for monitors to track member activity and inventory, and MLab members to share ideas and discover projects. Built with React and Python.</p>
-      </div>
-      <div class='project'>
-        <h3>Thicket</h3>
-        <p>Built a collaborative "digital brain" for academic collaboration running on LAMP stack. 200+ votes on Product Hunt. 1000+ active users at peak.</p>
-      </div>
-      <div class='project'>
-        <h3>Robot Car</h3>
-        <p>Fabricated a hybrid self-driving robot car using the Parallax ActivityBot platform and Arduino, connected to a PHP navigation microservice running the Google Maps API.</p>
-      </div>
-      <div class='project'>
-        <h3>Village OS</h3>
-        <p>Designed a circular, decentralized economy for rural regions with a distributed supply chain and p2p networking.</p>
-      </div>
-    </div>
-  </main>
+  </header>
+  <div class='work-wrap'>
+  <section class="head">
+      <header>
+          <!-- <div class="visit-blog desktop">
+              <h1>Blog</h1>
+              <p>Visit my <a href="https://notes.gyan.biz">blog</a> to explore my latest projects and ideas.</p>
+          </div> -->
+          <hgroup>
+              <h1 class="work-ident">Projects</h1>
+              <h2>My projects are interdisciplinary and span words, code, electronics, and research.</h2>
+          </hgroup>
+      </header>
+  </section>
+
+  <section class="work">
+
+          <!--<div class="box mobilestorm">
+              <img src="img/work/mobilestorm.png" alt="MobileStorm">
+              <h3>MobileStorm</h3>
+              <p>We coded a web app prototype (based on iOS 7 design guidelines) for email and mobile messaging company MobileStorm, which will be integrated into a mobile health app for doctor-patient communication across America.</p>
+              <p class="tags"><span class="tag">HTML</span> / <span class="tag">CSS</span> / <span class="tag">JavaScript</span> / <span class="tag">iOS</span> / <span class="tag">Web App</span></p>
+              <p class="buttons"><button class="learn-more" onclick="location.href='http://jujubeweb.com/projects/mobilestorm'">Learn more</button></p>
+          </div>-->
+
+          <div class="box mobilestorm">
+              <img src="img/work/mobilestorm.png" alt="ScaleIN">
+              <h3>Thicket</h3>
+              <p>I built a digital brain for academic collaboration. I wrote most of the code for the web app, mobile apps, and API; built a multidisciplinary team of 10+ employees; handled promotion; and pitched to investors. 200+ votes on Product Hunt. 1000+ active users at peak.</p>
+              <p class="tags"><span class="tag">HTML</span> / <span class="tag">CSS</span> / <span class="tag">JavaScript</span> / <span class="tag">PHP</span> / <span class="tag">Angular JS</span></p>
+              <p class="buttons"><button class="button learn-more" onclick="location.href='https://medium.com/@gyan/the-story-of-thicket-e361654496b7'">Read more</button></p>
+          </div>
+
+          <div class="box yoyful">
+              <img src="img/work/yoyful.png" alt="Yoyful">
+              <h3>MLab</h3>
+              <p>I developed an internal app for monitors to track member activity and inventory and a public web app. I also created a custom WordPress theme for our marketing website.</p>
+              <p class="tags"><span class="tag">React</span> / <span class="tag">Python</span> / <span class="tag">HTML</span> / <span class="tag">CSS</span> / <span class="tag">WordPress</span></p>
+              <p class="buttons"><button class="button learn-more" onclick="window.open('http://makerlab.sites.grinnell.edu')">Visit site</button></p>
+          </div>
+
+          <div class="box bamboo desktop" onclick="#">
+              <img src="img/work/bamboo.png">
+              <h3>HEAT</h3>
+              <p>Piezoelectric energy harvesting insoles</p>
+          </div>
+
+          <div class="box scalein">
+              <img src="img/work/scalein.png" alt="ScaleIN">
+              <h3>mPulse Mobile</h3>
+              <p>I created an interactive demo site for the health startup's Insights and Messaging APIs. I also developed a personalized dashboard to support Sales and Marketing staff.</p>
+              <p class="tags"><span class="tag">Python</span> / <span class="tag">Django</span> / <span class="tag">HTML</span> / <span class="tag">CSS</span> / <span class="tag">JavaScript</span> / <span class="tag">Prototyping</span></p>
+              <p class="buttons"><button class="button learn-more" onclick="window.open('https://github.com/gyanishere/webform')">See code</button></p>
+          </div>
+
+          <div class="box tikati">
+              <img src="img/work/tikati.png">
+              <h3>Village OS</h3>
+              <p>I designed a circular, decentralized economy for rural regions with a distributed supply chain and p2p networking.</p>
+              <p class="buttons"><button class="button learn-more" onclick="location.href='#'">Read more</button></p>
+          </div>
+
+          <div class="box law">
+              <img src="img/work/lawoffices.png" alt="Law Offices of Vikram Brar">
+              <h3>Robot Car</h3>
+              <p>I fabricated a hybrid self-driving robot car using the Parallax ActivityBot platform and Arduino and built an API microservice which conveyed navigational data.</p>
+              <p class="buttons"><button class="button learn-more" onclick="window.open('https://github.com/gyanishere/robotcar')">See code</button></p>
+          </div>
+
+         <div class="button box bottom desktop icon" onclick="location.href='https://github.com/gyanishere/'">
+              <img src="img/work/tempo.png" alt="Tempo">
+              <h3>GitHub</h3>
+              <p>I've put code from some of my projects on GitHub</p>
+          </div>
+
+          <div class="button box bottom desktop icon" onclick="location.href='https://www.amazon.com/Civilizations-Gyan-Prayaga/dp/1329276108'">
+              <img src="img/work/bits.png" alt="Jujube Bits">
+              <h3>Civilizations</h3>
+              <p>Interdisciplinary history textbook covering six ancient civilizations</p>
+          </div>
+
+          <div class="button box bottom chargeme desktop icon" onclick="location.href='http://envirothink.org/o/ChargeMe2'">
+              <img src="img/work/chargeme.png" alt="ChargeMe">
+              <h3>ChargeMe</h3>
+              <p>Find electric charging stations anywhere, for free (made in 2012 and not maintained since)</p>
+          </div>
+  </section>
+</div>
+
+<footer class="main">
+    <div class="abs-container">
+            <p class="logo-left">
+
+            </p>
+            <div class="text-right">
+                <ul class="one">
+                    <li class="title">Main</li>
+                    <li><a href="/" class="button">Home</a></li>
+                    <li><a href="projects" class="button">Projects</a></li>
+                    <li><a href="contact" class="button">Contact</a></li>
+                </ul>
+                <ul class="two">
+                    <li class="title">More</li>
+                    <!-- <li><a href="https://blog.gyan.biz/" class="button">Notes</a></li> -->
+                    <li><a href="https://twitter.com/gyanprayaga" target="_blank" class="button">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/in/gyan-prayaga-a385bb111/" target="_blank" class="button">LinkedIn</a></li>
+                </ul>
+                <!-- <ul class="three">
+                    <li class="title">Social</li>
+                    <li><script>document.write('<a class="button" href=\"mailto:' + 'contact' + '@' + 'jujubeweb.com' + '?Subject=Hello%2C%20Jujube%21' + '\">Email' + '</a>');</script></li>
+                    <li><a href="http://google.com/+jujubeweb" class="button">Google+</a></li>
+                    <li><a href="http://behance.net/jujubeweb" class="button">B&#275;hance</a></li>
+                </ul> -->
+                <ul class="four">
+                    <li><span class="made">Crafted with <span class="icon-heart" aria-hidden="true">&#x2665;</span> in LA.</span></li>
+                </ul>
+              </div>
+
+     </div>
+</footer>
+
 </body>
 </html>
